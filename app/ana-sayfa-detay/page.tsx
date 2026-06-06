@@ -44,6 +44,7 @@ export default function HomePage() {
   const [galleryImages, setGalleryImages] = useState<any[]>([]);
   const [comments, setComments] = useState<Comment[]>([]);
   const [loading, setLoading] = useState(true);
+  const [youtubeLiveId, setYoutubeLiveId] = useState<string>("7-Qf3g-0xEI");
 
   // Fallback örnek veriler kaldırıldı - sadece veritabanından gelenler gösterilecek
   const fallbackTours: any[] = [];
@@ -100,6 +101,19 @@ export default function HomePage() {
         if (commentsResponse.ok) {
           const commentsData = await commentsResponse.json();
           setComments(commentsData.slice(0, 6) || []); // İlk 6 yorumu al
+        }
+
+        // Ayarları (YouTube Live ID) çek
+        try {
+          const settingsResponse = await fetch('/api/settings');
+          if (settingsResponse.ok) {
+            const settingsData = await settingsResponse.json();
+            if (settingsData && settingsData.youtube_live_id) {
+              setYoutubeLiveId(settingsData.youtube_live_id);
+            }
+          }
+        } catch (settingsErr) {
+          console.error('Ayarlar yüklenirken hata:', settingsErr);
         }
       } catch (error) {
         console.error('Veri yüklenirken hata:', error);
@@ -184,7 +198,7 @@ export default function HomePage() {
                   <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/7-Qf3g-0xEI?autoplay=1&mute=1"
+                    src={`https://www.youtube.com/embed/${youtubeLiveId}?autoplay=1&mute=1`}
                     title="YouTube Canlı Yayın"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
