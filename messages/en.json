@@ -1,0 +1,491 @@
+{
+  "common": {
+    "readMore": "Read More",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "available": "Available",
+    "accommodationDetails": "Accommodation Details",
+    "makkah": "Makkah",
+    "madinah": "Madinah",
+    "detailedInfo": "Detailed Info",
+    "included": "What's Included",
+    "includedDesc": "Everything you need for your Umrah journey"
+  },
+  "nav": {
+    "home": "Home",
+    "umrah": "Umrah Tours",
+    "hajj": "Hajj Tours",
+    "jerusalem": "Jerusalem Tours",
+    "cultural": "Cultural Tours",
+    "about": "About Us",
+    "contact": "Contact",
+    "gallery": "Gallery"
+  },
+  "languageSelector": {
+    "title": "Select Language",
+    "turkish": "Turkish",
+    "arabic": "Arabic",
+    "english": "English",
+    "continue": "Continue"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Ramadan Umrah Packages",
+      "description": "Embark on a spiritual journey during the blessed month of Ramadan",
+      "cta": "View Packages"
+    },
+    "slide2": {
+      "title": "Early Booking Opportunities",
+      "description": "Book now and enjoy special prices",
+      "cta": "Book Now"
+    },
+    "slide3": {
+      "title": "Special Gold Package",
+      "description": "Premium hotels close to the Kaaba and exclusive services",
+      "cta": "More Info"
+    },
+    "slide4": {
+      "title": "Spiritual Journey with Experienced Guides",
+      "description": "With 30 years of experience by your side",
+      "cta": "Discover Us"
+    }
+  },
+  "packages": {
+    "title": "Our Umrah Packages",
+    "subtitle": "Choose the package that suits you best and begin your spiritual journey",
+    "economical": {
+      "name": "Standard Package",
+      "price": "1,430",
+      "features": [
+        "800-1200m distance to Kaaba",
+        "800-1200m to Masjid al-Nabawi",
+        "Turkish cuisine meals",
+        "Experienced guide"
+      ]
+    },
+    "silver": {
+      "name": "Comfort Package",
+      "price": "1,750",
+      "features": [
+        "500-800m distance to Kaaba",
+        "500-800m to Masjid al-Nabawi",
+        "Premium meal service",
+        "City transfers"
+      ]
+    },
+    "gold": {
+      "name": "VIP Package",
+      "price": "2,350",
+      "features": [
+        "200-500m distance to Kaaba",
+        "200-500m to Masjid al-Nabawi",
+        "VIP transfer service",
+        "Special tour program"
+      ]
+    },
+    "platinum": {
+      "name": "Exclusive Package",
+      "price": "3,500",
+      "features": [
+        "Kaaba view rooms",
+        "Walking distance to Masjid al-Nabawi",
+        "Private car allocation",
+        "24/7 personal consultant"
+      ]
+    },
+    "starting": "starting from",
+    "cta": "View Details"
+  },
+  "upcomingTours": {
+    "title": "Our Upcoming Tours",
+    "subtitle": "Browse our upcoming Umrah tours and reserve your spot",
+    "departure": "Departure",
+    "transfer": "Transit",
+    "return": "Return",
+    "days": "Days",
+    "nights": "Nights",
+    "from": "starting from"
+  },
+  "whyUs": {
+    "title": "Why İpekçi Tourism?",
+    "subtitle": "With 30 years of experience and meticulous service approach, we are by your side",
+    "feature1": {
+      "title": "Ministry of Religious Affairs approved Hajj and Umrah organizer",
+      "description": "Officially approved, reliable organization"
+    },
+    "feature2": {
+      "title": "TÜRSAB and IATA certified reliable company",
+      "description": "International standard service"
+    },
+    "feature3": {
+      "title": "Expert, experienced Turkish-speaking guides",
+      "description": "Professional guidance service"
+    },
+    "feature4": {
+      "title": "Accommodation in highest quality hotels",
+      "description": "Comfortable and quality accommodation"
+    },
+    "feature5": {
+      "title": "Safe transportation with Turkish Airlines",
+      "description": "Safe and comfortable travel"
+    },
+    "feature6": {
+      "title": "24/7 support line and professional team",
+      "description": "We are with you at all times"
+    },
+    "feature7": {
+      "title": "Comprehensive travel health insurance",
+      "description": "Journey with full assurance"
+    },
+    "feature8": {
+      "title": "Flexible payment and installment options",
+      "description": "Suitable payment plans"
+    }
+  },
+  "contactForm": {
+    "title": "Let's Create Your Custom Umrah Tour",
+    "subtitle": "Fill out the form and let's determine the most suitable package for you together",
+    "name": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "date": "Preferred Date",
+    "persons": "Number of Persons",
+    "message": "Your Message (Optional)",
+    "kvkk": "I accept the processing of my personal data within the scope of KVKK",
+    "whatsappOpt": "I would like to be informed via WhatsApp",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been sent successfully. We will get back to you as soon as possible.",
+    "error": "An error occurred. Please try again."
+  },
+  "testimonials": {
+    "title": "What Our Guests Say?",
+    "subtitle": "Reviews from our guests who embarked on an Umrah journey with us"
+  },
+  "blog": {
+    "title": "Blog & Guide",
+    "subtitle": "Useful information for your Umrah and Hajj preparation",
+    "readMore": "Read More"
+  },
+  "destinations": {
+    "title": "More Destinations Waiting to Be Discovered",
+    "subtitle": "Other spiritual tours we organize apart from Umrah",
+    "jerusalem": "Jerusalem Tours",
+    "bosnia": "Bosnia Tours",
+    "uzbekistan": "Uzbekistan Tours",
+    "andalusia": "Andalusia Tours"
+  },
+  "tourDetail": {
+    "back": "Go Back",
+    "departure": "Departure",
+    "duration": "Duration",
+    "days": "Days",
+    "nights": "Nights",
+    "city": "City",
+    "airline": "Airline",
+    "hotels": "Accommodation Hotels",
+    "makkah": "Makkah Hotel",
+    "madinah": "Madinah Hotel",
+    "toKaaba": "To Kaaba",
+    "toMasjid": "To Masjid al-Nabawi",
+    "included": "What's Included",
+    "excluded": "What's Not Included",
+    "itinerary": "Tour Program",
+    "pricing": "Pricing",
+    "persons": "Person",
+    "whatsapp": "Contact via WhatsApp",
+    "contact": "Get Information",
+    "priceNote": "Prices are per person and may vary according to room sharing. Contact us for detailed information."
+  },
+  "footer": {
+    "contact": "Contact",
+    "services": "Our Services",
+    "corporate": "Corporate",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterText": "Stay informed about campaigns and announcements",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved.",
+    "about": "About Us",
+    "faq": "Frequently Asked Questions",
+    "certificates": "Our Certificates",
+    "kvkk": "KVKK",
+    "address": "Kırıkkale, Turkey",
+    "ourServices": "Our Services"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "How can we help you? Get in touch with us",
+    "phone": "Phone",
+    "callUs": "Call us now",
+    "email": "Email",
+    "writeUs": "Write to us",
+    "address": "Address",
+    "workingHours": "Working Hours",
+    "mondayFriday": "Monday - Friday:",
+    "saturday": "Saturday:",
+    "sunday": "Sunday:",
+    "closed": "Closed",
+    "emergencyNote": "* You can reach us 24/7 for emergencies",
+    "sendMessage": "Send Us a Message",
+    "fullName": "Full Name *",
+    "yourEmail": "Your Email *",
+    "yourPhone": "Your Phone Number *",
+    "subject": "Subject *",
+    "selectSubject": "Select subject",
+    "umrah": "Umrah Tours",
+    "hajj": "Hajj Tours",
+    "cultural": "Cultural Tours",
+    "generalInfo": "General Information",
+    "other": "Other",
+    "yourMessage": "Your Message *",
+    "messagePlaceholder": "Write your message here...",
+    "sendButton": "Send Message",
+    "requiredFields": "* required fields",
+    "visitOffice": "Visit Our Office",
+    "appointmentNote": "We recommend making an appointment before visiting our office.",
+    "shareComment": "Share Your Comment",
+    "yourComment": "Your Comment *",
+    "yourRating": "Your Rating",
+    "commentPlaceholder": "Share your experience with us...",
+    "submitComment": "Submit Comment",
+    "submittingComment": "Submitting...",
+    "commentSuccess": "Your comment has been received! It will be published after approval.",
+    "customerReviews": "Customer Reviews",
+    "customerExperiences": "Experiences of our guests",
+    "viewOnMap": "View on Map",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Title": "How to make a reservation?",
+    "faq1Text": "You can make a reservation by phone, email, or by visiting our office.",
+    "faq2Title": "What are the payment options?",
+    "faq2Text": "You can pay by cash, bank transfer/EFT, and credit card in installments.",
+    "faq3Title": "Cancellation and refund policy?",
+    "faq3Text": "You can review your contract terms for cancellation conditions or call us."
+  },
+  "tourPages": {
+    "umrahTitle": "Umrah Tours",
+    "umrahSubtitle": "Embark on a spiritual journey to the holy lands",
+    "hajjTitle": "Hajj Tours",
+    "hajjSubtitle": "Fulfill your pilgrimage of a lifetime",
+    "culturalTitle": "Cultural Tours",
+    "culturalSubtitle": "Discover historical and cultural riches",
+    "noTours": "No tours available at the moment",
+    "bookNow": "Book Now",
+    "viewDetails": "View Details",
+    "from": "From",
+    "perPerson": "per person"
+  },
+  "umrahPage": {
+    "experience": "30 Years of Experience",
+    "introText": "IPEKCI TOURISM provides comprehensive services to Muslim brothers and sisters who wish to perform the Hajj and Umrah pilgrimage, recognized as guests and servants of Allah, both domestically and internationally, assisting them with accurate information in the light of the Quran and Sunnah, free from innovations and superstitions, with experienced male and female religious officials and guides.",
+    "aboutUmrah": "About Umrah Worship",
+    "aboutUmrahDesc": "Umrah is a spiritual worship performed by Muslims by visiting Mecca",
+    "whatIsUmrah": "What is Umrah?",
+    "whatIsUmrahDesc": "Umrah is an important pilgrimage to Mecca that includes specific forms of worship. It can be performed at any time, but its reward increases especially during Ramadan.",
+    "holyPlaces": "Holy Places",
+    "holyPlacesDesc": "The Kaaba in Mecca, the hills of Safa and Marwa, and the Prophet's Mosque in Medina are the main points of the Umrah pilgrimage.",
+    "bestTimes": "Best Times",
+    "bestTimesDesc": "Umrah can be performed throughout the year. Ramadan is the most preferred period, especially experiencing high traffic in the last 10 days.",
+    "spiritualValue": "Spiritual Value",
+    "spiritualValueDesc": "Umrah worship is an important act of worship that forgives sins, purifies the heart, and brings closeness to Allah.",
+    "medina": "Medina",
+    "prophetCity": "The City of Our Prophet",
+    "medinaText1": "Medina is a city with a unique spiritual atmosphere. This spiritual essence never leaves, welcoming its visitors with its sources. While breathing the peace unique to Medina, this peace continues under the strong traces of His influence, and this atmosphere and spiritual traces are passed on to future generations.",
+    "medinaText2": "This blessed city where our Prophet Hz. Muhammad (S.A.V) lived and passed away is one of the most important centers of Islamic history. The Prophet's Mosque, Mount Uhud, and other historical sites offer visitors an unparalleled spiritual experience.",
+    "ourPackages": "Our Umrah Packages",
+    "ourPackagesDesc": "Special umrah packages prepared to suit every budget",
+    "days": "Days",
+    "nights": "Nights",
+    "departure": "Departure",
+    "makkahHotel": "Makkah Hotel",
+    "madinahHotel": "Madinah Hotel",
+    "airline": "Airline",
+    "included": "Included",
+    "startingFrom": "Starting from",
+    "transportation": "Transportation",
+    "transportationItem1": "Round-trip flight ticket",
+    "transportationItem2": "Airport meet and greet",
+    "transportationItem3": "All transfers between Mecca and Medina",
+    "transportationItem4": "Transportation to visiting points",
+    "accommodation": "Accommodation",
+    "accommodationItem1": "Comfortable hotels in Mecca and Medina",
+    "accommodationItem2": "Walking distance to Harem",
+    "accommodationItem3": "Clean and modern rooms",
+    "accommodationItem4": "Daily room cleaning",
+    "meals": "Meals",
+    "mealsItem1": "Daily open buffet breakfast",
+    "mealsItem2": "Meals suitable for Turkish cuisine",
+    "mealsItem3": "Zamzam water service",
+    "mealsItem4": "Special dietary needs (upon request)",
+    "guidance": "Guidance and Services",
+    "guidanceItem1": "Experienced Turkish-speaking guide",
+    "guidanceItem2": "Umrah worship training",
+    "guidanceItem3": "Visit to historical and religious sites",
+    "guidanceItem4": "24-hour support line",
+    "happyGuests": "Thousands of Happy Guests",
+    "happyGuestsText": "As Ipekci Tourism, we have been organizing umrah tours for 30 years, safely guiding thousands of our guests on their spiritual journeys. With our experienced staff and quality service approach, we offer you an unforgettable umrah experience."
+  },
+  "hajjPage": {
+    "experience": "30 Years of Experience",
+    "subtitle": "Professional and reliable service for performing the Hajj pilgrimage, one of the five pillars of Islam",
+    "aboutHajj": "About Hajj Pilgrimage",
+    "aboutHajjDesc": "Hajj is one of the most important acts of worship that Muslims must perform in Mecca at a specific time",
+    "whatIsHajj": "What is Hajj?",
+    "whatIsHajjDesc": "Hajj pilgrimage is performed between the 8th-13th days of the month of Dhul-Hijjah every year. The 2026 Hajj season is estimated to take place in June.",
+    "hajjPlaces": "Hajj Places",
+    "hajjPlacesDesc": "Mecca, Medina, Arafat, Muzdalifah and Mina are the sacred places where the Hajj pilgrimage is performed. Each has its own specific forms of worship.",
+    "hajjConditions": "Hajj Requirements",
+    "hajjConditionsDesc": "Being Muslim, being sane, having reached puberty, being free, and having financial and physical ability are the necessary conditions for Hajj.",
+    "importantInfo": "Important Information About 2026 Hajj Period",
+    "hajjPeriod": "Hajj Period:",
+    "hajjPeriodText": "June 14-19, 2026 (estimated - may vary according to Dhul-Hijjah calendar)",
+    "quota": "Our Quota:",
+    "quotaText": "Limited quota approved by the Presidency of Religious Affairs",
+    "earlyReservation": "Early Reservation:",
+    "earlyReservationText": "We strongly recommend early reservation as quota is limited",
+    "requiredDocuments": "Required Documents:",
+    "requiredDocumentsText": "Passport, health report, vaccination card and other official documents",
+    "ourPackages": "Our Hajj Packages",
+    "vipTents": "VIP Tents",
+    "mina": "Mina:",
+    "arafat": "Arafat:",
+    "includedDesc": "Everything you need for your Hajj journey",
+    "transportationItem3": "All land transfers with air-conditioned luxury buses",
+    "accommodationItem1": "Comfortable hotel accommodation in Mecca and Medina",
+    "accommodationItem2": "Tent accommodation in Mina and Arafat",
+    "accommodationItem3": "Locations close to Harem",
+    "mealsItem1": "Full board accommodation",
+    "mealsItem2": "Meals suitable for Turkish cuisine",
+    "mealsItem3": "Zamzam water service",
+    "services": "Services",
+    "servicesItem1": "Experienced Turkish-speaking Hajj guide",
+    "servicesItem2": "24-hour health support",
+    "servicesItem3": "Qurbani (sacrifice) organization",
+    "experienceAndTrust": "30 Years of Experience and Trust",
+    "experienceText": "As Ipekci Tourism, we have been organizing hajj tours for 30 years, professionally guiding thousands of hajj candidates on this spiritual journey. With our quota approved by the Presidency of Religious Affairs and our experienced staff, we offer you the best service."
+  },
+  "culturalPage": {
+    "subtitle": "Discover historical and cultural riches in the footsteps of Islamic civilization",
+    "aboutTitle": "About Cultural Tours",
+    "intro1": "As Ipekci Tourism, we invite you to a journey that goes deep into history. From Istanbul's unique historical and cultural treasures to Antakya's ancient civilizations, from Bursa's magnificent legacies to Lebanon's thousands-of-years-old mountains, you will experience unforgettable moments across a wide geography.",
+    "intro2": "Following the traces of Islamic civilization, we will discover historical buildings, museums, mosques and cultural riches together. Each of our tours is carefully planned to offer you an unforgettable experience with our expert guides, accommodation in 5-star hotels and our highest level of service approach.",
+    "comfortableTransport": "Comfortable Transportation",
+    "comfortableTransportDesc": "Safe and comfortable travel with Turkish Airlines",
+    "expertGuides": "Expert Guides",
+    "expertGuidesDesc": "Our Turkish-speaking guides experienced in history and culture",
+    "fiveStarHotels": "5-Star Hotels",
+    "fiveStarHotelsDesc": "Luxury accommodation and top-level service quality",
+    "uniqueMapTitle": "On Our Country's Unique Map",
+    "uniqueMapText": "We make a difference in cultural tours on our country's unique map! To know our culture from A to Z, including religions, languages, tastes, history, nature, sea, plains, valleys - in short, traveling through different cities of Anatolia, enjoying the unlimited Mediterranean, Aegean coasts, pleasant moments in the magnificent nature of its shores become unforgettable with İPEKÇİ TOURISM...",
+    "natureToursTitle": "Our Nature Tours",
+    "natureToursText": "In the untouched unique beauty of green in the Black Sea, in the peaceful environment of the Islands in Istanbul, on the unique map of Bursa Yedigöller and in all corners of Anatolia that has hosted thousands of years and dozens of civilizations, live the moments you will remember with pleasant, nice memories with İPEKCİ TOURISM Nature Tours...",
+    "everyCornerTitle": "In Every Corner of Turkey",
+    "everyCornerText": "In every region of Turkey, away from the stress caused by life, in thermal facilities with high standards that are comfortable and well-equipped, a healing holiday intertwined with nature awaits you with İPEKCİ TOURISM...",
+    "detailContact": "For detailed information and reservations, you can",
+    "contactUs": "contact us",
+    "ourToursTitle": "Our Cultural Tours",
+    "loading": "Loading tours...",
+    "noTours": "There are currently no active cultural tours.",
+    "popular": "Popular",
+    "day": "Day",
+    "night": "Night",
+    "person2": "For 2 People",
+    "packageContent": "Package Content:",
+    "more": "more...",
+    "viewDetails": "View Details"
+  },
+  "aboutPage": {
+    "sinceTrust": "Trusted Since 2009",
+    "title": "About Us",
+    "subtitle": "Your trusted guide on your spiritual journey",
+    "ourStory": "Our Story",
+    "storyText1": "Ipekci Tourism was established in 2009 to provide services in the field of Umrah and Hajj organizations. From day one, our mission has been to provide our guests with a safe, comfortable and spiritually peaceful travel experience.",
+    "storyHighlight": "Serving thousands of our guests,",
+    "storyHighlightText": "we have succeeded in keeping the satisfaction of each of our guests at the highest level.",
+    "storyText2": "Today, in addition to Umrah and Hajj tours, we have expanded our range of services with cultural tours where we follow the traces of Islamic civilization.",
+    "teamTitle": "Our Team",
+    "teamSubtitle": "Our experienced team serving you",
+    "loading": "Loading...",
+    "noTeam": "Team information will be added soon.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The principles that make us who we are",
+    "trust": "Trust",
+    "trustDesc": "Diyanet approved, licensed and reliable service approach",
+    "quality": "Quality",
+    "qualityDesc": "The best hotels, transportation and guidance services",
+    "spiritualPeace": "Spiritual Peace",
+    "spiritualPeaceDesc": "Organization where you can perform your worship in peace",
+    "support247": "24/7 Support",
+    "support247Desc": "We are with you at every moment of your journey",
+    "ourMission": "Our Mission",
+    "missionText": "To provide our guests with the highest quality, safe and peaceful experience on their spiritual journeys. To help each of our guests accumulate unforgettable memories by keeping their satisfaction at the highest level.",
+    "ourVision": "Our Vision",
+    "visionText": "To become Turkey's most reliable and preferred tourism company. To become a brand that sets quality service standards and directs the sector in the Islamic geography.",
+    "serviceApproach": "Our Service Approach",
+    "comfortPeace": "Comfort and Peace",
+    "comfortPeaceText": "We are at your service with alternative tour options so that you can continue your habits and comfort on vacation without compromising your lifestyle.",
+    "alwaysWithYou": "24/7 With You",
+    "alwaysWithYouText": "We are with you by providing 24/7 online service with our professional staff before and during your vacation.",
+    "whyUs": "Why Ipekci Tourism?",
+    "whyUsSubtitle": "Reasons to be preferred with confidence",
+    "whyItem1": "Hajj and Umrah organizer approved by the Presidency of Religious Affairs",
+    "whyItem2": "Reliable company certified by TÜRSAB and IATA",
+    "whyItem3": "Expert, experienced Turkish-speaking guides",
+    "whyItem4": "Accommodation opportunity in the highest quality hotels",
+    "whyItem5": "Safe transportation with Turkish Airlines",
+    "whyItem6": "24/7 support line and professional team"
+  },
+  "galleryPage": {
+    "title": "Our Memories",
+    "subtitle": "Unforgettable moments from our past tours",
+    "allCategories": "All",
+    "loading": "Loading...",
+    "noImages": "There are no images in this category yet.",
+    "closeButton": "Close"
+  },
+  "homePage": {
+    "stats": {
+      "happyGuests": "Happy Guests",
+      "yearsExperience": "Years of Experience",
+      "satisfaction": "Satisfaction"
+    },
+    "upcomingTours": {
+      "title": "Our Upcoming Tours",
+      "subtitle": "Browse our upcoming Umrah tours and reserve your spot",
+      "viewAll": "View All Tours"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "subtitle": "With 30 years of experience and meticulous service approach, we are by your side",
+      "feature1": "Ministry of Religious Affairs approved Hajj and Umrah organizer",
+      "feature2": "TÜRSAB and IATA certified reliable company",
+      "feature3": "Expert, experienced Turkish-speaking guides",
+      "feature4": "Accommodation in highest quality hotels",
+      "feature5": "Safe transportation with Turkish Airlines",
+      "feature6": "24/7 support line and professional team",
+      "feature7": "Comprehensive travel health insurance",
+      "feature8": "Flexible payment and installment options"
+    },
+    "liveStream": "LIVE",
+    "gallery": {
+      "title": "Highlights from Our Tours",
+      "subtitle": "Special moments from our past tours",
+      "viewAll": "View All Photos"
+    },
+    "testimonials": {
+      "title": "What Our Guests Say",
+      "subtitle": "Reviews from our guests who embarked on this spiritual journey with us"
+    },
+    "cta": {
+      "title": "Start Your Dream Journey",
+      "subtitle": "Contact us for your special tour packages",
+      "button": "Call Now"
+    },
+    "noComments": "No approved comments yet.",
+    "viewAllReviews": "View all reviews on Google",
+    "guaranteed": "Guaranteed",
+    "howManyPeople": "How many people"
+  }
+}

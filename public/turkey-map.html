@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Türkiye Haritası Test</title>
+  <style>
+    body { margin: 0; padding: 20px; font-family: Arial; }
+    svg { width: 100%; height: auto; border: 1px solid #ddd; }
+    .province { stroke: #FFF; stroke-width: 1; transition: all 0.3s; }
+    .province.inactive { fill: #E0F3FF; cursor: not-allowed; }
+    .province.active { fill: #81d742; cursor: pointer; }
+    .province.active:hover { fill: #D4AF37; }
+    #info { position: absolute; background: white; padding: 10px; border: 1px solid #ddd; display: none; }
+  </style>
+</head>
+<body>
+  <h1>Türkiye Haritası - İnteraktif</h1>
+  <div id="info"></div>
+  
+  <!-- Gerçek Türkiye Haritası SVG buraya gelecek -->
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 500">
+    <g id="adana" class="province active" data-name="Adana">
+      <path d="M645,410 L650,415 L655,410 L660,405 L665,408 L670,410 L670,415 L665,420 L660,418 L655,415 L650,418 L645,420 Z"/>
+    </g>
+    <!-- Diğer 80 il buraya eklenecek -->
+  </svg>
+
+  <script>
+    const provinces = document.querySelectorAll('.province');
+    const info = document.getElementById('info');
+    
+    provinces.forEach(p => {
+      p.addEventListener('mousemove', (e) => {
+        info.style.display = 'block';
+        info.style.left = e.pageX + 10 + 'px';
+        info.style.top = e.pageY + 10 + 'px';
+        info.textContent = p.dataset.name;
+      });
+      
+      p.addEventListener('mouseleave', () => {
+        info.style.display = 'none';
+      });
+      
+      p.addEventListener('click', () => {
+        if (p.classList.contains('active')) {
+          alert('Seçilen il: ' + p.dataset.name);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

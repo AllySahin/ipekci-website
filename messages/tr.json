@@ -1,0 +1,570 @@
+{
+  "common": {
+    "readMore": "Devamını Oku",
+    "contact": "İletişim",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "whatsapp": "WhatsApp",
+    "available": "Müsait",
+    "accommodationDetails": "Konaklama Detayları",
+    "makkah": "Mekke",
+    "madinah": "Medine",
+    "detailedInfo": "Detaylı Bilgi",
+    "included": "Paketlerimize Dahil Olanlar",
+    "includedDesc": "Umre yolculuğunuzda ihtiyaç duyacağınız her şey"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "umrah": "Umre Turları",
+    "hajj": "Hac Turları",
+    "jerusalem": "Kudüs Turları",
+    "cultural": "Kültür Turları",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "gallery": "Galeri"
+  },
+  "languageSelector": {
+    "title": "Dil Seçimi",
+    "turkish": "Türkçe",
+    "arabic": "العربية",
+    "english": "English",
+    "continue": "Devam Et"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Ramazan-ı Şerif Umre Paketleri",
+      "description": "Mübarek Ramazan ayında manevi bir yolculuğa çıkın",
+      "cta": "Paketleri İncele"
+    },
+    "slide2": {
+      "title": "Erken Rezervasyon Fırsatları",
+      "description": "Şimdi rezervasyon yapın, özel fiyatlardan yararlanın",
+      "cta": "Hemen Rezervasyon Yap"
+    },
+    "slide3": {
+      "title": "Özel Altın Paket",
+      "description": "Kabine yakın premium oteller ve özel hizmetler",
+      "cta": "Detaylı Bilgi"
+    },
+    "slide4": {
+      "title": "Tecrübeli Rehberlerle Manevi Yolculuk",
+      "description": "30 yıllık tecrübemizle yanınızdayız",
+      "cta": "Bizi Keşfedin"
+    }
+  },
+  "packages": {
+    "title": "Umre Paketlerimiz",
+    "subtitle": "Size en uygun paketi seçin ve manevi yolculuğunuza başlayın",
+    "economical": {
+      "name": "Standart Paket",
+      "price": "1,430",
+      "features": [
+        "Kabe'ye 800-1200m mesafe",
+        "Mescid-i Nebevi'ye 800-1200m",
+        "Türk mutfağı yemekler",
+        "Tecrübeli rehber"
+      ]
+    },
+    "silver": {
+      "name": "Konforlu Paket",
+      "price": "1,750",
+      "features": [
+        "Kabe'ye 500-800m mesafe",
+        "Mescid-i Nebevi'ye 500-800m",
+        "Premium yemek servisi",
+        "Şehir içi transferler"
+      ]
+    },
+    "gold": {
+      "name": "VIP Paket",
+      "price": "2,350",
+      "features": [
+        "Kabe'ye 200-500m mesafe",
+        "Mescid-i Nebevi'ye 200-500m",
+        "VIP transfer hizmeti",
+        "Özel tur programı"
+      ]
+    },
+    "platinum": {
+      "name": "Özel Paket",
+      "price": "3,500",
+      "features": [
+        "Kabe görünümlü odalar",
+        "Mescid-i Nebevi'ye yürüme mesafesi",
+        "Özel araba tahsisi",
+        "7/24 özel danışman"
+      ]
+    },
+    "starting": "başlayan fiyatlarla",
+    "cta": "Detayları İncele"
+  },
+  "upcomingTours": {
+    "title": "En Yakın Turlarımız",
+    "subtitle": "Yaklaşan umre turlarımıza göz atın ve yerinizi ayırtın",
+    "departure": "Gidiş",
+    "transfer": "Ara Geçiş",
+    "return": "Dönüş",
+    "days": "Gün",
+    "nights": "Gece",
+    "from": "dan başlayan fiyatlarla"
+  },
+  "whyUs": {
+    "title": "Neden İpekçi Turizm?",
+    "subtitle": "30 yıllık tecrübemiz ve özenli hizmet anlayışımızla yanınızdayız",
+    "feature1": {
+      "title": "Tecrübeli Rehberler",
+      "description": "Alanında uzman, deneyimli rehber kadromuz"
+    },
+    "feature2": {
+      "title": "Premium Oteller",
+      "description": "Kutsal mekanlara yakın, konforlu konaklama"
+    },
+    "feature3": {
+      "title": "Türk Mutfağı",
+      "description": "Damak tadınıza uygun özel yemek menüleri"
+    },
+    "feature4": {
+      "title": "Sağlık Sigortası",
+      "description": "Kapsamlı seyahat sağlık sigortası"
+    },
+    "feature5": {
+      "title": "Eğitim Seminerleri",
+      "description": "Umre öncesi hazırlık ve bilgilendirme"
+    },
+    "feature6": {
+      "title": "Resmi Sertifikalar",
+      "description": "TÜRSAB ve Diyanet onaylı"
+    },
+    "feature7": {
+      "title": "7/24 Destek",
+      "description": "Her an ulaşabileceğiniz müşteri hizmetleri"
+    },
+    "feature8": {
+      "title": "Uygun Ödeme",
+      "description": "Esnek ödeme ve taksit seçenekleri"
+    }
+  },
+  "whyUs": {
+    "title": "Neden İpekçi Turizm?",
+    "subtitle": "30 yıllık tecrübemiz ve özenli hizmet anlayışımızla yanınızdayız",
+    "feature1": {
+      "title": "Diyanet İşleri Başkanlığı onaylı Hac ve Umre organizatörü",
+      "description": "Resmi onaylı, güvenilir organizasyon"
+    },
+    "feature2": {
+      "title": "TÜRSAB ve IATA belgeli güvenilir firma",
+      "description": "Uluslararası standartlarda hizmet"
+    },
+    "feature3": {
+      "title": "Alanında uzman, deneyimli Türkçe rehberler",
+      "description": "Profesyonel rehberlik hizmeti"
+    },
+    "feature4": {
+      "title": "En kaliteli otellerde konaklama imkanı",
+      "description": "Konforlu ve kaliteli konaklama"
+    },
+    "feature5": {
+      "title": "Türk Havayolları ile güvenli ulaşım",
+      "description": "Güvenli ve konforlu seyahat"
+    },
+    "feature6": {
+      "title": "7/24 destek hattı ve profesyonel ekip",
+      "description": "Her an yanınızdayız"
+    },
+    "feature7": {
+      "title": "Kapsamlı seyahat sağlık sigortası",
+      "description": "Tam güvence altında yolculuk"
+    },
+    "feature8": {
+      "title": "Esnek ödeme ve taksit seçenekleri",
+      "description": "Uygun ödeme planları"
+    }
+  },
+  "contactForm": {
+    "title": "Size Özel Umre Turunu Oluşturalım",
+    "subtitle": "Formu doldurun, size en uygun paketi birlikte belirleyelim",
+    "name": "Ad Soyad",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "date": "Tarih Tercihi",
+    "persons": "Kişi Sayısı",
+    "message": "Mesajınız (İsteğe Bağlı)",
+    "kvkk": "KVKK kapsamında kişisel verilerimin işlenmesini kabul ediyorum",
+    "whatsappOpt": "WhatsApp üzerinden bilgilendirilmek istiyorum",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  },
+  "testimonials": {
+    "title": "Misafirlerimiz Ne Diyor?",
+    "subtitle": "Bizimle umre yolculuğuna çıkan misafirlerimizin yorumları"
+  },
+  "blog": {
+    "title": "Blog & Rehber",
+    "subtitle": "Umre ve hac hazırlığınız için faydalı bilgiler",
+    "readMore": "Devamını Oku"
+  },
+  "destinations": {
+    "title": "Keşfedilmeyi Bekleyen Daha Fazla Destinasyon",
+    "subtitle": "Umre dışında düzenlediğimiz diğer manevi turlar",
+    "jerusalem": "Kudüs Turları",
+    "bosnia": "Bosna Turları",
+    "uzbekistan": "Özbekistan Turları",
+    "andalusia": "Endülüs Turları"
+  },
+  "tourDetail": {
+    "back": "Geri Dön",
+    "departure": "Kalkış",
+    "duration": "Süre",
+    "days": "Gün",
+    "nights": "Gece",
+    "city": "Şehir",
+    "airline": "Havayolu",
+    "hotels": "Konaklama Otelleri",
+    "makkah": "Mekke Oteli",
+    "madinah": "Medine Oteli",
+    "toKaaba": "Kabe'ye",
+    "toMasjid": "Mescid-i Nebevi'ye",
+    "included": "Fiyata Dahil Olanlar",
+    "excluded": "Fiyata Dahil Olmayanlar",
+    "itinerary": "Tur Programı",
+    "pricing": "Fiyatlandırma",
+    "persons": "Kişi",
+    "whatsapp": "WhatsApp ile İletişim",
+    "contact": "Bilgi Al",
+    "priceNote": "Fiyatlar kişi başı olup, oda paylaşımına göre değişkenlik gösterebilir. Detaylı bilgi için bizimle iletişime geçin."
+  },
+  "footer": {
+    "contact": "İletişim",
+    "services": "Hizmetlerimiz",
+    "corporate": "Kurumsal",
+    "followUs": "Bizi Takip Edin",
+    "newsletter": "E-Bülten",
+    "newsletterText": "Kampanya ve duyurulardan haberdar olun",
+    "subscribe": "Abone Ol",
+    "rights": "Tüm hakları saklıdır.",
+    "about": "Hakkımızda",
+    "faq": "Sık Sorulan Sorular",
+    "certificates": "Sertifikalarımız",
+    "kvkk": "KVKK",
+    "address": "Kırıkkale, Türkiye",
+    "ourServices": "Hizmetlerimiz"
+  },
+  "homePage": {
+    "stats": {
+      "happyGuests": "Mutlu Misafir",
+      "yearsExperience": "Yıllık Tecrübe",
+      "satisfaction": "Memnuniyet"
+    },
+    "upcomingTours": {
+      "title": "En Yakın Turlarımız",
+      "subtitle": "Yaklaşan umre turlarımıza göz atın ve yerinizi ayırın",
+      "viewAll": "Tüm Turları Görüntüle"
+    },
+    "whyChooseUs": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "subtitle": "30 yıllık tecrübemiz ve özenli hizmet anlayışımızla yanınızdayız",
+      "feature1": "Diyanet İşleri Başkanlığı onaylı Hac ve Umre organizatörü",
+      "feature2": "TÜRSAB ve IATA belgeli güvenilir firma",
+      "feature3": "Alanında uzman, deneyimli Türkçe rehberler",
+      "feature4": "En kaliteli otellerde konaklama imkanı",
+      "feature5": "Türk Havayolları ile güvenli ulaşım",
+      "feature6": "7/24 destek hattı ve profesyonel ekip",
+      "feature7": "Kapsamlı seyahat sağlık sigortası",
+      "feature8": "Esnek ödeme ve taksit seçenekleri"
+    },
+    "liveStream": "CANLI YAYIN",
+    "gallery": {
+      "title": "Turlarımızdan Görseller",
+      "subtitle": "Geçmiş turlarımızdan özel anlar",
+      "viewAll": "Tüm Görselleri İncele"
+    },
+    "testimonials": {
+      "title": "Misafirlerimiz Ne Diyor?",
+      "subtitle": "Bizimle bu manevi yolculuğa çıkan misafirlerimizin yorumları"
+    },
+    "cta": {
+      "title": "Hayalinizdeki Yolculuğa Başlayın",
+      "subtitle": "Size özel tur paketlerimiz için bizimle iletişime geçin",
+      "button": "Hemen Arayın"
+    },
+    "noComments": "Henüz onaylanmış yorum bulunmamaktadır.",
+    "viewAllReviews": "Google'da tüm yorumları görüntüle",
+    "guaranteed": "Garantili",
+    "howManyPeople": "Kaç kişi"
+  },
+  "tourPages": {
+    "umrahTitle": "Umre Turları",
+    "umrahSubtitle": "Kutsal topraklara manevi bir yolculuğa çıkın",
+    "hajjTitle": "Hac Turları",
+    "hajjSubtitle": "Hayatınızın farzını yerine getirin",
+    "culturalTitle": "Kültür Turları",
+    "culturalSubtitle": "Tarihi ve kültürel zenginlikleri keşfedin",
+    "noTours": "Şu anda uygun tur bulunmamaktadır",
+    "bookNow": "Hemen Rezervasyon Yap",
+    "viewDetails": "Detayları İncele",
+    "from": "başlayan",
+    "perPerson": "kişi başı"
+  },
+  "umrahPage": {
+    "experience": "30 Yıllık Deneyim",
+    "introText": "İPEKCİ TURİZM; Allah'ın misafirleri ve çalıştırıcıları olarak kabul edilen Hac ve Umre ibadetini yerine getirmek isteyen Müslüman kardeşlerimize, yurt içinde ve yurt dışında kapsamlı bir hizmet vermekte, Kur'an ve Sünnet ışığında, bid'at ve hurafelerden uzak, tecrübeli bayan ve erkek din görevlileri ve rehberleri ile birlikte doğru bilgi eşliğinde yardımcı olmaktadır.",
+    "aboutUmrah": "Umre İbadeti Hakkında",
+    "aboutUmrahDesc": "Umre, Müslümanların Mekke'yi ziyaret ederek yaptıkları manevi bir ibadettir",
+    "whatIsUmrah": "Umre Nedir?",
+    "whatIsUmrahDesc": "Umre, Mekke'de yapılan ve belirli ibadet şekillerini içeren önemli bir ziyarettir. Her zaman yapılabilir ancak özellikle Ramazan ayında sevabı artar.",
+    "holyPlaces": "Kutsal Yerler",
+    "holyPlacesDesc": "Mekke'deki Kabe, Safa-Merve tepeleri ve Medine'deki Mescid-i Nebevi umre ziyaretinin temel noktalarıdır.",
+    "bestTimes": "En İyi Zamanlar",
+    "bestTimesDesc": "Umre yıl boyunca yapılabilir. Ramazan ayı en fazla tercih edilen dönem olup, özellikle son 10 günde yoğunluk yaşanır.",
+    "spiritualValue": "Manevi Değer",
+    "spiritualValueDesc": "Umre ibadeti günahları bağışlatan, kalbi temizleyen ve Allah'a yakınlaşmayı sağlayan önemli bir ibadettir.",
+    "medina": "Medine",
+    "prophetCity": "Peygamberimizin Şehri",
+    "medinaText1": "Medine, bir şehirdir. Bu manevi atmosferin ruhu ayrılmamakta, kaynakları misafirlerini atmosferin misafirlerinin bir safagetirilir. Medine'ye has bir huzur solurken ince, bu huzur Ön...günün ayaka, altında, Onun güçlü izlesine duyacı, günceinin çıkışnı, o atmosfer ve manevi izler sonraki kuşaklara geçmektedir.",
+    "medinaText2": "Peygamberimiz Hz. Muhammed'in (S.A.V) yaşadığı ve vefat ettiği bu mübarek şehir, İslam tarihinin en önemli merkezlerinden biridir. Mescid-i Nebevi, Uhud Dağı ve diğer tarihi mekanlar ile ziyaretçilerine eşsiz bir manevi deneyim sunar.",
+    "ourPackages": "Umre Paketlerimiz",
+    "ourPackagesDesc": "Her bütçeye uygun özel olarak hazırlanmış umre paketlerimiz",
+    "days": "Gün",
+    "nights": "Gece",
+    "departure": "Gidiş",
+    "makkahHotel": "Mekke Oteli",
+    "madinahHotel": "Medine Oteli",
+    "airline": "Havayolu",
+    "included": "Fiyata Dahil",
+    "startingFrom": "başlayan fiyatlarla",
+    "transportation": "Ulaşım",
+    "transportationItem1": "Gidiş-dönüş uçak bileti",
+    "transportationItem2": "Havalimanı karşılama ve uğurlama",
+    "transportationItem3": "Mekke-Medine arası tüm transferler",
+    "transportationItem4": "Ziyaret noktalarına ulaşım",
+    "accommodation": "Konaklama",
+    "accommodationItem1": "Mekke ve Medine'de konforlu otel",
+    "accommodationItem2": "Harem'e yürüme mesafesi",
+    "accommodationItem3": "Temiz ve modern odalar",
+    "accommodationItem4": "Günlük oda temizliği",
+    "meals": "Yemek",
+    "mealsItem1": "Günlük açık büfe kahvaltı",
+    "mealsItem2": "Türk mutfağına uygun yemekler",
+    "mealsItem3": "Zemzem suyu ikramı",
+    "mealsItem4": "Özel diyet ihtiyaçları (talep üzerine)",
+    "guidance": "Rehberlik ve Hizmetler",
+    "guidanceItem1": "Deneyimli Türkçe konuşan rehber",
+    "guidanceItem2": "Umre ibadetleri eğitimi",
+    "guidanceItem3": "Tarihi ve dini yerler ziyareti",
+    "guidanceItem4": "24 saat destek hattı",
+    "happyGuests": "Binlerce Mutlu Misafir",
+    "happyGuestsText": "İpekçi Turizm olarak 30 yıldır umre organizasyonları düzenliyor, binlerce misafirimizi manevi yolculuklarında güvenle yönlendiriyoruz. Deneyimli kadromuz ve kaliteli hizmet anlayışımızla sizlere unutulmaz bir umre deneyimi sunuyoruz."
+  },
+  "hajjPage": {
+    "experience": "30 Yıllık Deneyim",
+    "subtitle": "İslam'ın beş şartından biri olan Hac ibadeti için profesyonel ve güvenilir hizmet",
+    "aboutHajj": "Hac İbadeti Hakkında",
+    "aboutHajjDesc": "Hac, Müslümanların Mekke'de belirli bir zamanda yapması gereken en önemli ibadetlerden biridir",
+    "whatIsHajj": "Hac Nedir?",
+    "whatIsHajjDesc": "Hac ibadeti her yıl Zilhicce ayının 8-13. günleri arasında yapılır. 2026 Hac sezonu tahmini olarak Haziran ayında gerçekleşecektir.",
+    "hajjPlaces": "Hac Yerleri",
+    "hajjPlacesDesc": "Mekke, Medine, Arafat, Müzdelife ve Mina hac ibadetinin yapıldığı kutsal yerlerdir. Her birinin kendine özgü ibadet şekilleri vardır.",
+    "hajjConditions": "Hac Şartları",
+    "hajjConditionsDesc": "Müslüman olmak, akıllı olmak, ergenlik çağına gelmiş olmak, hür olmak, mali ve bedeni güce sahip olmak hac için gerekli şartlardır.",
+    "importantInfo": "2026 Hac Dönemi Hakkında Önemli Bilgiler",
+    "hajjPeriod": "Hac Dönemi:",
+    "hajjPeriodText": "14-19 Haziran 2026 (tahmini - Zilhicce ayı takvimine göre değişebilir)",
+    "quota": "Kotamız:",
+    "quotaText": "Diyanet İşleri Başkanlığı onaylı sınırlı kontenjan",
+    "earlyReservation": "Erken Rezervasyon:",
+    "earlyReservationText": "Kontenjan sınırlı olduğu için erken rezervasyon yapmanızı önemle tavsiye ederiz",
+    "requiredDocuments": "Gerekli Evraklar:",
+    "requiredDocumentsText": "Pasaport, sağlık raporu, aşı kartı ve diğer resmi belgeler",
+    "ourPackages": "Hac Paketlerimiz",
+    "vipTents": "VIP Çadır",
+    "mina": "Mina:",
+    "arafat": "Arafat:",
+    "includedDesc": "Hac yolculuğunuzda ihtiyaç duyacağınız her şey",
+    "transportationItem3": "Klimalı lüks otobüslerle tüm kara transferleri",
+    "accommodationItem1": "Mekke ve Medine'de konforlu otel konaklaması",
+    "accommodationItem2": "Mina ve Arafat'ta çadır konaklaması",
+    "accommodationItem3": "Harem'e yakın lokasyonlar",
+    "mealsItem1": "Tam pansiyon konaklama",
+    "mealsItem2": "Türk mutfağına uygun öğünler",
+    "mealsItem3": "Zemzem suyu ikramı",
+    "services": "Hizmetler",
+    "servicesItem1": "Deneyimli Türkçe konuşan hac rehberi",
+    "servicesItem2": "24 saat sağlık desteği",
+    "servicesItem3": "Kurban organizasyonu",
+    "experienceAndTrust": "30 Yıllık Tecrübe ve Güven",
+    "experienceText": "İpekçi Turizm olarak 30 yıldır hac organizasyonları düzenliyor, binlerce hacı adayını bu manevi yolculukta profesyonelce yönlendiriyoruz. Diyanet İşleri Başkanlığı onaylı kotamız ve deneyimli kadromuzla sizlere en iyi hizmeti sunuyoruz."
+  },
+  "culturalPage": {
+    "subtitle": "İslam medeniyetinin izinde, tarihi ve kültürel zenginlikleri keşfedin",
+    "aboutTitle": "Kültür Turları Hakkında",
+    "intro1": "İpekçi Turizm olarak, tarihin derinliklerine uzanan bir yolculuğa sizi davet ediyoruz. İstanbul'un eşsiz tarihi ve kültürel hazinelerinden Antakya'nun kadim medeniyetlerine, Bursa'nın muhteşem yadigarlarından Lübnan'ın binlerce yıllık dağlarına kadar geniş bir coğrafyada unutulmaz anlar yaşayacaksınız.",
+    "intro2": "İslam medeniyetinin izini sürerek, tarihi yapıları, müzeleri, camileri ve kültürel zenginlikleri birlikte keşfedeceğiz. Her turimiz, uzman rehberlerimiz eşliğinde, 5 yıldızlı otellerde konaklamanız ve en üst düzey hizmet anlayışımızla unutulmaz bir deneyim sunmak üzere özenle planlanmıştır.",
+    "comfortableTransport": "Konforlu Ulaşım",
+    "comfortableTransportDesc": "Türk Havayolları ile güvenli ve konforlu seyahat",
+    "expertGuides": "Uzman Rehberler",
+    "expertGuidesDesc": "Tarih ve kültür konusunda deneyimli Türkçe rehberlerimiz",
+    "fiveStarHotels": "5 Yıldızlı Oteller",
+    "fiveStarHotelsDesc": "Lüks konaklama ve üst düzey hizmet kalitesi",
+    "uniqueMapTitle": "Ülkemizin Eşsiz Haritasında",
+    "uniqueMapText": "Ülkemizin eşsiz haritasında kültür turlarında farkı yaratıyoruz! Dinleri, dilleri, tatları, tarihi, doğası, denizi, ovası, vadisi kısacası A'dan Z'ye kültürümüzü tanımak için Anadolu'nun farklı şehirlerinde sınırsız Akdeniz'i, Ege'yi gezmeniz sahillerinin muhteşem doğasında keyifli anlar İPEKÇİ TURİZM ile unutulmaz hale geliyor...",
+    "natureToursTitle": "Doğa Turlarımız",
+    "natureToursText": "Karadeniz'de yeşilin el değmemiş eşsiz güzelliği içinde, İstanbul'da Adalar'ın huzurlu ortamında, Bursa Yedigöller'in eşsiz haritasında ve binlerce yıl, onlarca medeniyete ev sahipliği yapmış Anadolu'nun tüm köşelerinde keyifli, hoş anılarla hatırlayacağınız anları İPEKCİ TURİZM Doğa Turları ile yaşayın...",
+    "everyCornerTitle": "Türkiye'nin Her Köşesinde",
+    "everyCornerText": "Türkiye'nin her bölgesinde hayatın yol açtığı stresten uzakta birbirinden konforlu ve donanımlı yüksek standartlara sahip termal tesislerde, doğayla içiçe şifa dolu bir tatil İPEKCİ TURİZM ile sizleri bekliyor...",
+    "detailContact": "Detaylı bilgi ve rezervasyon için bizimle",
+    "contactUs": "iletişime geçebilirsiniz",
+    "ourToursTitle": "Kültür Turlarımız",
+    "loading": "Turlar yükleniyor...",
+    "noTours": "Şu anda aktif kültür turu bulunmamaktadır.",
+    "popular": "Popüler",
+    "day": "Gün",
+    "night": "Gece",
+    "person2": "Kişilik",
+    "packageContent": "Paket İçeriği:",
+    "more": "dahası...",
+    "viewDetails": "Detayları İncele"
+  },
+  "aboutPage": {
+    "sinceTrust": "2009'dan Beri Güvenle",
+    "title": "Hakkımızda",
+    "subtitle": "Manevi yolculuğunuzda güvenilir rehberiniz",
+    "ourStory": "Hikayemiz",
+    "storyText1": "İpekçi Turizm, 2009 yılında Umre ve Hac organizasyonları alanında hizmet vermek üzere kuruldu. İlk günden itibaren misyonumuz, misafirlerimize güvenli, konforlu ve manevi açıdan huzurlu bir yolculuk deneyimi sunmak oldu.",
+    "storyHighlight": "Binlerce misafirimize",
+    "storyHighlightText": "hizmet vererek, her bir misafirimizin memnuniyetini en üst düzeyde tutmayı başardık.",
+    "storyText2": "Bugün, Umre ve Hac turlarının yanı sıra, İslam medeniyetinin izlerini sürdüğümüz kültür turları ile de hizmet yelpazemizi genişlettik.",
+    "teamTitle": "Çalışma Arkadaşlarımız",
+    "teamSubtitle": "Sizlere hizmet eden deneyimli ekibimiz",
+    "loading": "Yükleniyor...",
+    "noTeam": "Ekip bilgileri yakında eklenecektir.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesSubtitle": "Bizi biz yapan prensipler",
+    "trust": "Güven",
+    "trustDesc": "Diyanet onaylı, lisanslı ve güvenilir hizmet anlayışı",
+    "quality": "Kalite",
+    "qualityDesc": "En iyi oteller, ulaşım ve rehberlik hizmetleri",
+    "spiritualPeace": "Manevi Huzur",
+    "spiritualPeaceDesc": "İbadetlerinizi huzur içinde yapabileceğiniz organizasyon",
+    "support247": "7/24 Destek",
+    "support247Desc": "Yolculuğunuzun her anında yanınızdayız",
+    "ourMission": "Misyonumuz",
+    "missionText": "Misafirlerimize, manevi yolculuklarında en kaliteli, güvenli ve huzurlu deneyimi sunmak. Her misafirimizin memnuniyetini en üst düzeyde tutarak, unutulmaz anılar biriktirmelerine yardımcı olmak.",
+    "ourVision": "Vizyonumuz",
+    "visionText": "Türkiye'nin en güvenilir ve tercih edilen turizm şirketi olmak. İslam coğrafyasında kaliteli hizmet standartlarını belirleyen, sektöre yön veren bir marka haline gelmek.",
+    "serviceApproach": "Hizmet Anlayışımız",
+    "comfortPeace": "Konfor ve Huzur",
+    "comfortPeaceText": "Yaşam tarzınızdan ödün vermeden, alışkanlıklarınızı ve konforunuzu tatilde de sürdürmeniz için alternatif tur seçenekleriyle hizmetinizdeyiz.",
+    "alwaysWithYou": "7/24 Yanınızdayız",
+    "alwaysWithYouText": "Tatil öncesinde ve tatiliniz süresince profesyonel kadromuzla 7/24 online hizmet vererek yanınızdayız.",
+    "whyUs": "Neden İpekçi Turizm?",
+    "whyUsSubtitle": "Güvenle tercih edilmenin nedenleri",
+    "whyItem1": "Diyanet İşleri Başkanlığı onaylı Hac ve Umre organizatörü",
+    "whyItem2": "TÜRSAB ve IATA belgeli güvenilir firma",
+    "whyItem3": "Alanında uzman, deneyimli Türkçe rehberler",
+    "whyItem4": "En kaliteli otellerde konaklama imkanı",
+    "whyItem5": "Türk Havayolları ile güvenli ulaşım",
+    "whyItem6": "7/24 destek hattı ve profesyonel ekip"
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Size nasıl yardımcı olabiliriz? Bizimle iletişime geçin",
+    "phone": "Telefon",
+    "callUs": "Hemen arayın",
+    "email": "E-posta",
+    "writeUs": "Bize yazın",
+    "address": "Adres",
+    "workingHours": "Çalışma Saatleri",
+    "mondayFriday": "Pazartesi - Cuma:",
+    "saturday": "Cumartesi:",
+    "sunday": "Pazar:",
+    "closed": "Kapalı",
+    "emergencyNote": "* Acil durumlar için 7/24 bize ulaşabilirsiniz",
+    "sendMessage": "Bize Mesaj Gönderin",
+    "fullName": "Ad Soyad *",
+    "yourEmail": "E-posta Adresiniz *",
+    "yourPhone": "Telefon Numaranız *",
+    "subject": "Konu *",
+    "selectSubject": "Konu seçin",
+    "umrah": "Umre Turları",
+    "hajj": "Hac Turları",
+    "cultural": "Kültür Turları",
+    "generalInfo": "Genel Bilgi",
+    "other": "Diğer",
+    "yourMessage": "Mesajınız *",
+    "messagePlaceholder": "Mesajınızı buraya yazın...",
+    "sendButton": "Mesaj Gönder",
+    "requiredFields": "* zorunlu alanlar",
+    "visitOffice": "Ofisimizi Ziyaret Edin",
+    "appointmentNote": "Ofisimizi ziyaret etmeden önce randevu almanızı öneririz.",
+    "shareComment": "Yorumunuzu Paylaşın",
+    "yourComment": "Yorumunuz *",
+    "yourRating": "Puanınız",
+    "commentPlaceholder": "Deneyiminizi bizimle paylaşın...",
+    "submitComment": "Yorum Gönder",
+    "submittingComment": "Gönderiliyor...",
+    "commentSuccess": "Yorumunuz alındı! Onaylandıktan sonra yayınlanacaktır.",
+    "customerReviews": "Müşteri Yorumları",
+    "customerExperiences": "Misafirlerimizin deneyimleri",
+    "viewOnMap": "Haritada Görüntüle",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faq1Title": "Nasıl rezervasyon yapabilirim?",
+    "faq1Text": "Telefon, e-posta ile veya ofisimizi ziyaret ederek rezervasyon yapabilirsiniz.",
+    "faq2Title": "Ödeme seçenekleri nelerdir?",
+    "faq2Text": "Nakit, havale/EFT ve taksitli kredi kartı ile ödeme yapabilirsiniz.",
+    "faq3Title": "İptal ve iade politikası?",
+    "faq3Text": "İptal koşulları için sözleşme şartlarınızı inceleyebilir veya bizi arayabilirsiniz."
+  },
+  "galleryPage": {
+    "title": "Anılarımız",
+    "subtitle": "Geçmiş turlarımızdan unutulmaz anlar",
+    "allCategories": "Tümü",
+    "loading": "Yükleniyor...",
+    "noImages": "Bu kategoride henüz görsel bulunmamaktadır.",
+    "closeButton": "Kapat"
+  },
+  "homePage": {
+    "stats": {
+      "happyGuests": "Mutlu Misafir",
+      "yearsExperience": "Yıllık Deneyim",
+      "satisfaction": "Memnuniyet"
+    },
+    "upcomingTours": {
+      "title": "Yaklaşan Turlarımız",
+      "subtitle": "Yaklaşan Umre turlarımıza göz atın ve yerinizi ayırtın",
+      "viewAll": "Tüm Turları Görüntüle"
+    },
+    "whyChooseUs": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "subtitle": "30 yıllık tecrübemiz ve özenli hizmet anlayışımızla yanınızdayız",
+      "feature1": "Diyanet İşleri Başkanlığı onaylı Hac ve Umre organizatörü",
+      "feature2": "TÜRSAB ve IATA belgeli güvenilir firma",
+      "feature3": "Alanında uzman, deneyimli Türkçe rehberler",
+      "feature4": "En kaliteli otellerde konaklama imkanı",
+      "feature5": "Türk Havayolları ile güvenli ulaşım",
+      "feature6": "7/24 destek hattı ve profesyonel ekip",
+      "feature7": "Kapsamlı seyahat sağlık sigortası",
+      "feature8": "Esnek ödeme ve taksit seçenekleri"
+    },
+    "liveStream": "CANLI YAYIN",
+    "gallery": {
+      "title": "Turlarımızdan Görseller",
+      "subtitle": "Geçmiş turlarımızdan özel anlar",
+      "viewAll": "Tüm Görselleri İncele"
+    },
+    "testimonials": {
+      "title": "Misafirlerimiz Ne Diyor?",
+      "subtitle": "Bizimle bu manevi yolculuğa çıkan misafirlerimizin yorumları"
+    },
+    "cta": {
+      "title": "Hayalinizdeki Yolculuğa Başlayın",
+      "subtitle": "Size özel tur paketlerimiz için bizimle iletişime geçin",
+      "button": "Hemen Arayın"
+    },
+    "noComments": "Henüz onaylanmış yorum bulunmamaktadır.",
+    "viewAllReviews": "Google'da tüm yorumları görüntüle",
+    "guaranteed": "Garantili",
+    "howManyPeople": "Kaç kişi"
+  }
+}
