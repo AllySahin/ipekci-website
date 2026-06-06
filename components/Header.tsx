@@ -52,7 +52,7 @@ export default function Header({ onMenuClick, onLanguageClick }: HeaderProps) {
         <div className="hidden lg:grid h-56 px-6 grid-cols-3 items-center gap-4">
           {/* Left - TR Logo and Language Selector */}
           <div className="flex flex-col items-start justify-center gap-1 pl-6">
-            <div className="relative w-52 h-40">
+            <div className="relative w-52 h-32 pointer-events-none">
               <Image
                 src="/images/tr.png"
                 alt="TR"
@@ -62,7 +62,7 @@ export default function Header({ onMenuClick, onLanguageClick }: HeaderProps) {
             </div>
             
             {/* Language Selector */}
-            <div className="flex gap-1.5 w-52">
+            <div className="flex gap-1.5 w-52 relative z-10">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
