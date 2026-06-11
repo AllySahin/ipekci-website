@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Calendar, MapPin, Users, Star, CheckCircle, Clock, Plane, Hotel, UtensilsCrossed, Heart, BookOpen, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { useTranslations } from '@/lib/useTranslations';
+import BookComponent from './BookComponent';
 
 // Türkçe karakterleri slug'a çeviren fonksiyon
 function slugify(text: string): string {
@@ -167,6 +168,26 @@ export default function UmreTurlariPage() {
         </div>
       </section>
 
+      {/* Umrenin Faziletleri Kitap Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-[#F5F1E8]">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-8">
+            <div className="inline-block bg-gold/10 text-gold px-4 py-2 rounded-full text-sm font-semibold mb-4">
+              {t('umrahPage.virtuesTitle')}
+            </div>
+            <h2 className="text-3xl font-bold text-navy mb-4">
+              {t('umrahPage.virtuesTitle')}
+            </h2>
+            <p className="text-gray-600 text-base max-w-2xl mx-auto">
+              {t('umrahPage.virtuesSubtitle')}
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <BookComponent totalPages={19} />
+          </div>
+        </div>
+      </section>
+
       {/* Tours Section */}
       <section className="py-16 bg-gradient-to-b from-[#F5F1E8] to-white">
         <div className="container mx-auto px-6">
@@ -195,7 +216,7 @@ export default function UmreTurlariPage() {
                 };
                 
                 const formatPrice = (price: number) => {
-                  return price.toLocaleString('tr-TR');
+                  return price.toLocaleString('en-US');
                 };
 
                 return (
@@ -208,7 +229,7 @@ export default function UmreTurlariPage() {
                         className="object-cover"
                       />
                       <div className="absolute top-4 right-4 bg-gold text-white px-4 py-1.5 rounded-lg font-bold text-sm shadow-lg">
-                        ₺{formatPrice(tour.price_2_person)}+
+                        ${formatPrice(tour.price_2_person)}+
                       </div>
                       <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-lg text-xs font-semibold">
                         {t('common.available')}
@@ -261,7 +282,7 @@ export default function UmreTurlariPage() {
                       
                       <div className="flex items-center justify-between pt-4 border-t">
                         <div>
-                          <span className="text-gold text-xs">₺</span>
+                          <span className="text-gold text-xs">$</span>
                           <span className="text-2xl font-bold text-navy ml-1">{formatPrice(tour.price_2_person)}</span>
                         </div>
                         <Link

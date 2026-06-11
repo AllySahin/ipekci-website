@@ -204,7 +204,7 @@ export default function HacTurlariPage() {
                   {/* Features - First 4 */}
                   <div className="mb-4">
                     <ul className="space-y-1.5">
-                      {tour.features.slice(0, 4).map((feature, index) => (
+                      {tour.features.slice(0, 4).map((feature: string, index: number) => (
                         <li key={index} className="flex items-center gap-2 text-xs text-gray-600">
                           <CheckCircle className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />
                           {feature}
