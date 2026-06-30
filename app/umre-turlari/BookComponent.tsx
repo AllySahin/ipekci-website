@@ -6,9 +6,11 @@ import { ChevronLeft, ChevronRight, Maximize2, Minimize2, Volume2, VolumeX, Play
 
 interface BookComponentProps {
   totalPages?: number;
+  imagePrefix?: string;
+  imageExtension?: string;
 }
 
-export default function BookComponent({ totalPages = 19 }: BookComponentProps) {
+export default function BookComponent({ totalPages = 19, imagePrefix = '/images/', imageExtension = '.jpg' }: BookComponentProps) {
   const [currentPage, setCurrentPage] = useState(1);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
@@ -134,7 +136,7 @@ export default function BookComponent({ totalPages = 19 }: BookComponentProps) {
   }, [handleNext, handlePrev, isFullscreen]);
 
   const getPageUrl = (pageNum: number) => {
-    return `/images/${pageNum}.jpg`;
+    return `${imagePrefix}${pageNum}${imageExtension}`;
   };
 
   return (

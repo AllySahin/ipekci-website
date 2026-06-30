@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Calendar, MapPin, Star, CheckCircle, Clock, Plane, Users } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useTranslations } from '@/lib/useTranslations';
+import BookComponent from '../umre-turlari/BookComponent';
 
 // Türkçe karakterleri slug'a çeviren fonksiyon
 function slugify(text: string): string {
@@ -135,6 +136,24 @@ export default function KulturTurlariPage() {
                   <p className="text-sm text-gray-600">
                     {t('culturalPage.fiveStarHotelsDesc')}
                   </p>
+                </div>
+              </div>
+
+              {/* PDF Book Section (Kültür Turları) */}
+              <div className="my-16">
+                <div className="text-center mb-8">
+                  <div className="inline-block bg-gold/10 text-gold px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Kültür Turları Katalog
+                  </div>
+                  <h2 className="text-3xl font-bold text-navy mb-4">
+                    Kültür Turları Kataloğumuz
+                  </h2>
+                  <p className="text-gray-600 text-base max-w-2xl mx-auto">
+                    Kültür turlarımızın detaylı bilgilerini içeren kataloğumuzu inceleyebilirsiniz.
+                  </p>
+                </div>
+                <div className="max-w-5xl mx-auto">
+                  <BookComponent imagePrefix="/kultur_images/" totalPages={25} imageExtension=".jpeg" />
                 </div>
               </div>
 
