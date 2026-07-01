@@ -109,7 +109,7 @@
     "from": "dan başlayan fiyatlarla"
   },
   "whyUs": {
-    "title": "Neden İpekçi Turizm?",
+    "title": "Neden İpekci Turizm?",
     "subtitle": "30 yıllık tecrübemiz ve özenli hizmet anlayışımızla yanınızdayız",
     "feature1": {
       "title": "Tecrübeli Rehberler",
@@ -145,7 +145,7 @@
     }
   },
   "whyUs": {
-    "title": "Neden İpekçi Turizm?",
+    "title": "Neden İpekci Turizm?",
     "subtitle": "30 yıllık tecrübemiz ve özenli hizmet anlayışımızla yanınızdayız",
     "feature1": {
       "title": "Diyanet İşleri Başkanlığı onaylı Hac ve Umre organizatörü",
@@ -357,7 +357,7 @@
     "guidanceItem3": "Tarihi ve dini yerler ziyareti",
     "guidanceItem4": "24 saat destek hattı",
     "happyGuests": "Binlerce Mutlu Misafir",
-    "happyGuestsText": "İpekçi Turizm olarak 30 yıldır umre organizasyonları düzenliyor, binlerce misafirimizi manevi yolculuklarında güvenle yönlendiriyoruz. Deneyimli kadromuz ve kaliteli hizmet anlayışımızla sizlere unutulmaz bir umre deneyimi sunuyoruz."
+    "happyGuestsText": "İpekci Turizm olarak 30 yıldır umre organizasyonları düzenliyor, binlerce misafirimizi manevi yolculuklarında güvenle yönlendiriyoruz. Deneyimli kadromuz ve kaliteli hizmet anlayışımızla sizlere unutulmaz bir umre deneyimi sunuyoruz."
   },
   "hajjPage": {
     "experience": "30 Yıllık Deneyim",
@@ -365,14 +365,14 @@
     "aboutHajj": "Hac İbadeti Hakkında",
     "aboutHajjDesc": "Hac, Müslümanların Mekke'de belirli bir zamanda yapması gereken en önemli ibadetlerden biridir",
     "whatIsHajj": "Hac Nedir?",
-    "whatIsHajjDesc": "Hac ibadeti her yıl Zilhicce ayının 8-13. günleri arasında yapılır. 2026 Hac sezonu tahmini olarak Haziran ayında gerçekleşecektir.",
+    "whatIsHajjDesc": "Hac ibadeti her yıl hicri takvime göre Zilhicce ayının 8-13. günleri arasında gerçekleştirilir.",
     "hajjPlaces": "Hac Yerleri",
     "hajjPlacesDesc": "Mekke, Medine, Arafat, Müzdelife ve Mina hac ibadetinin yapıldığı kutsal yerlerdir. Her birinin kendine özgü ibadet şekilleri vardır.",
     "hajjConditions": "Hac Şartları",
     "hajjConditionsDesc": "Müslüman olmak, akıllı olmak, ergenlik çağına gelmiş olmak, hür olmak, mali ve bedeni güce sahip olmak hac için gerekli şartlardır.",
-    "importantInfo": "2026 Hac Dönemi Hakkında Önemli Bilgiler",
+    "importantInfo": "Hac Dönemi Hakkında Önemli Bilgiler",
     "hajjPeriod": "Hac Dönemi:",
-    "hajjPeriodText": "14-19 Haziran 2026 (tahmini - Zilhicce ayı takvimine göre değişebilir)",
+    "hajjPeriodText": "Hicri Zilhicce ayının 8-13. günleri arası",
     "quota": "Kotamız:",
     "quotaText": "Diyanet İşleri Başkanlığı onaylı sınırlı kontenjan",
     "earlyReservation": "Erken Rezervasyon:",
@@ -396,12 +396,12 @@
     "servicesItem2": "24 saat sağlık desteği",
     "servicesItem3": "Kurban organizasyonu",
     "experienceAndTrust": "30 Yıllık Tecrübe ve Güven",
-    "experienceText": "İpekçi Turizm olarak 30 yıldır hac organizasyonları düzenliyor, binlerce hacı adayını bu manevi yolculukta profesyonelce yönlendiriyoruz. Diyanet İşleri Başkanlığı onaylı kotamız ve deneyimli kadromuzla sizlere en iyi hizmeti sunuyoruz."
+    "experienceText": "İpekci Turizm olarak 30 yıldır hac organizasyonları düzenliyor, binlerce hacı adayını bu manevi yolculukta profesyonelce yönlendiriyoruz. Diyanet İşleri Başkanlığı onaylı kotamız ve deneyimli kadromuzla sizlere en iyi hizmeti sunuyoruz."
   },
   "culturalPage": {
     "subtitle": "İslam medeniyetinin izinde, tarihi ve kültürel zenginlikleri keşfedin",
     "aboutTitle": "Kültür Turları Hakkında",
-    "intro1": "İpekçi Turizm olarak, tarihin derinliklerine uzanan bir yolculuğa sizi davet ediyoruz. İstanbul'un eşsiz tarihi ve kültürel hazinelerinden Antakya'nun kadim medeniyetlerine, Bursa'nın muhteşem yadigarlarından Lübnan'ın binlerce yıllık dağlarına kadar geniş bir coğrafyada unutulmaz anlar yaşayacaksınız.",
+    "intro1": "İpekci Turizm olarak, tarihin derinliklerine uzanan bir yolculuğa sizi davet ediyoruz. İstanbul'un eşsiz tarihi ve kültürel hazinelerinden Antakya'nun kadim medeniyetlerine, Bursa'nın muhteşem yadigarlarından Lübnan'ın binlerce yıllık dağlarına kadar geniş bir coğrafyada unutulmaz anlar yaşayacaksınız.",
     "intro2": "İslam medeniyetinin izini sürerek, tarihi yapıları, müzeleri, camileri ve kültürel zenginlikleri birlikte keşfedeceğiz. Her turimiz, uzman rehberlerimiz eşliğinde, 5 yıldızlı otellerde konaklamanız ve en üst düzey hizmet anlayışımızla unutulmaz bir deneyim sunmak üzere özenle planlanmıştır.",
     "comfortableTransport": "Konforlu Ulaşım",
     "comfortableTransportDesc": "Türk Havayolları ile güvenli ve konforlu seyahat",
@@ -410,7 +410,7 @@
     "fiveStarHotels": "5 Yıldızlı Oteller",
     "fiveStarHotelsDesc": "Lüks konaklama ve üst düzey hizmet kalitesi",
     "uniqueMapTitle": "Ülkemizin Eşsiz Haritasında",
-    "uniqueMapText": "Ülkemizin eşsiz haritasında kültür turlarında farkı yaratıyoruz! Dinleri, dilleri, tatları, tarihi, doğası, denizi, ovası, vadisi kısacası A'dan Z'ye kültürümüzü tanımak için Anadolu'nun farklı şehirlerinde sınırsız Akdeniz'i, Ege'yi gezmeniz sahillerinin muhteşem doğasında keyifli anlar İPEKÇİ TURİZM ile unutulmaz hale geliyor...",
+    "uniqueMapText": "Ülkemizin eşsiz haritasında kültür turlarında farkı yaratıyoruz! Dinleri, dilleri, tatları, tarihi, doğası, denizi, ovası, vadisi kısacası A'dan Z'ye kültürümüzü tanımak için Anadolu'nun farklı şehirlerinde sınırsız Akdeniz'i, Ege'yi gezmeniz sahillerinin muhteşem doğasında keyifli anlar İPEKCİ TURİZM ile unutulmaz hale geliyor...",
     "natureToursTitle": "Doğa Turlarımız",
     "natureToursText": "Karadeniz'de yeşilin el değmemiş eşsiz güzelliği içinde, İstanbul'da Adalar'ın huzurlu ortamında, Bursa Yedigöller'in eşsiz haritasında ve binlerce yıl, onlarca medeniyete ev sahipliği yapmış Anadolu'nun tüm köşelerinde keyifli, hoş anılarla hatırlayacağınız anları İPEKCİ TURİZM Doğa Turları ile yaşayın...",
     "everyCornerTitle": "Türkiye'nin Her Köşesinde",
@@ -433,7 +433,7 @@
     "title": "Hakkımızda",
     "subtitle": "Manevi yolculuğunuzda güvenilir rehberiniz",
     "ourStory": "Hikayemiz",
-    "storyText1": "İpekçi Turizm, 2009 yılında Umre ve Hac organizasyonları alanında hizmet vermek üzere kuruldu. İlk günden itibaren misyonumuz, misafirlerimize güvenli, konforlu ve manevi açıdan huzurlu bir yolculuk deneyimi sunmak oldu.",
+    "storyText1": "İpekci Turizm, 2009 yılında Umre ve Hac organizasyonları alanında hizmet vermek üzere kuruldu. İlk günden itibaren misyonumuz, misafirlerimize güvenli, konforlu ve manevi açıdan huzurlu bir yolculuk deneyimi sunmak oldu.",
     "storyHighlight": "Binlerce misafirimize",
     "storyHighlightText": "hizmet vererek, her bir misafirimizin memnuniyetini en üst düzeyde tutmayı başardık.",
     "storyText2": "Bugün, Umre ve Hac turlarının yanı sıra, İslam medeniyetinin izlerini sürdüğümüz kültür turları ile de hizmet yelpazemizi genişlettik.",
@@ -460,7 +460,7 @@
     "comfortPeaceText": "Yaşam tarzınızdan ödün vermeden, alışkanlıklarınızı ve konforunuzu tatilde de sürdürmeniz için alternatif tur seçenekleriyle hizmetinizdeyiz.",
     "alwaysWithYou": "7/24 Yanınızdayız",
     "alwaysWithYouText": "Tatil öncesinde ve tatiliniz süresince profesyonel kadromuzla 7/24 online hizmet vererek yanınızdayız.",
-    "whyUs": "Neden İpekçi Turizm?",
+    "whyUs": "Neden İpekci Turizm?",
     "whyUsSubtitle": "Güvenle tercih edilmenin nedenleri",
     "whyItem1": "Diyanet İşleri Başkanlığı onaylı Hac ve Umre organizatörü",
     "whyItem2": "TÜRSAB ve IATA belgeli güvenilir firma",

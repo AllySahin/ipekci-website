@@ -31,7 +31,7 @@ export default function Header({ onMenuClick, onLanguageClick }: HeaderProps) {
             <div className="relative w-60 h-16">
               <Image
                 src="/images/ipekci-logo.png"
-                alt="İpekçi Turizm"
+                alt="İpekci Turizm"
                 fill
                 className="object-contain"
               />
@@ -92,7 +92,7 @@ export default function Header({ onMenuClick, onLanguageClick }: HeaderProps) {
             <div className="relative h-full aspect-[10/1] group-hover:opacity-90 transition-opacity">
               <Image
                 src="/images/ipekci-logo.png"
-                alt="İpekçi Turizm"
+                alt="İpekci Turizm"
                 fill
                 className="object-contain"
               />

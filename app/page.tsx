@@ -114,7 +114,7 @@ export default function LandingPage() {
             <div className="relative w-full aspect-[3/4]">
               <Image
                 src="/images/abdullah-ipekci.png"
-                alt="Abdullah İpekçi"
+                alt="Abdullah İpekci"
                 fill
                 className="object-contain"
                 priority

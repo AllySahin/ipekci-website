@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="relative w-40 h-16">
                 <Image
                   src="/images/ipekci-logo.png"
-                  alt="İpekçi Turizm"
+                  alt="İpekci Turizm"
                   fill
                   className="object-contain"
                   priority
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} İpekçi Turizm. {t('footer.rights')}</p>
+          <p>&copy; {new Date().getFullYear()} İpekci Turizm. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>

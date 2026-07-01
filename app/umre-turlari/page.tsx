@@ -428,24 +428,9 @@ export default function UmreTurlariPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-navy mb-2">{t('umrahPage.happyGuests')}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {t('umrahPage.happyGuestsText')}
                   </p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <a 
-                      href="tel:+905001234567" 
-                      className="text-gold font-semibold hover:underline flex items-center gap-1"
-                    >
-                      <span>+90 500 123 45 67</span>
-                    </a>
-                    <span className="text-gray-400">|</span>
-                    <a 
-                      href="mailto:info@ipekci.com" 
-                      className="text-gold font-semibold hover:underline"
-                    >
-                      info@ipekci.com
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>

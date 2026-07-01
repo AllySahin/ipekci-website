@@ -129,7 +129,6 @@ export default function HacTurlariPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-navy mb-3">{t('hajjPage.ourPackages')}</h2>
-            <p className="text-gray-600 text-base">{t('umrahPage.ourPackagesDesc')}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -343,24 +342,9 @@ export default function HacTurlariPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-navy mb-2">{t('hajjPage.experienceAndTrust')}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {t('hajjPage.experienceText')}
                   </p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <a 
-                      href="tel:+905001234567" 
-                      className="text-gold font-semibold hover:underline flex items-center gap-1"
-                    >
-                      <span>+90 500 123 45 67</span>
-                    </a>
-                    <span className="text-gray-400">|</span>
-                    <a 
-                      href="mailto:info@ipekci.com" 
-                      className="text-gold font-semibold hover:underline"
-                    >
-                      info@ipekci.com
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
