@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { X } from 'lucide-react';
+import { X, Images } from 'lucide-react';
 import { useTranslations } from '@/lib/useTranslations';
 
 interface GalleryItem {
@@ -16,63 +16,86 @@ interface GalleryItem {
   order: number;
 }
 
+interface CategoryGroup {
+  value: string;
+  label: string;
+  images: string[];
+  count: number;
+}
+
+// Her fotoğraf için dağınık açı sabitleri (deterministik)
+const SCATTER_ROTATIONS = [-8, 4, -3, 7, -5, 2, -6, 9, -2, 5];
+const SCATTER_OFFSETS = [
+  { x: -6, y: -4 },
+  { x: 5, y: 3 },
+  { x: -3, y: 6 },
+  { x: 8, y: -2 },
+  { x: -5, y: 5 },
+];
+
 export default function GaleriPage() {
   const { t } = useTranslations();
-  const [gallery, setGallery] = useState<GalleryItem[]>([]);
+  const [allGallery, setAllGallery] = useState<GalleryItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState('all');
   const [categories, setCategories] = useState<{ value: string; label: string }[]>([]);
-  const [lightbox, setLightbox] = useState<{ isOpen: boolean; image: string; title: string } | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [lightbox, setLightbox] = useState<{ isOpen: boolean; image: string; index: number; images: string[] } | null>(null);
 
   useEffect(() => {
-    fetchCategories();
+    Promise.all([fetchCategories(), fetchGallery()]);
   }, []);
-
-  useEffect(() => {
-    fetchGallery();
-  }, [selectedCategory]);
 
   const fetchCategories = async () => {
     try {
       const res = await fetch('/api/gallery/categories');
       const data = await res.json();
-      if (Array.isArray(data)) {
-        setCategories(data);
-      }
-    } catch (error) {
-      console.error('Kategoriler yüklenirken hata:', error);
-    }
+      if (Array.isArray(data)) setCategories(data);
+    } catch {}
   };
 
   const fetchGallery = async () => {
     try {
-      const url = selectedCategory === 'all' 
-        ? '/api/gallery' 
-        : `/api/gallery?category=${selectedCategory}`;
-      
-      const res = await fetch(url);
+      const res = await fetch('/api/gallery');
       const data = await res.json();
-      
-      if (Array.isArray(data)) {
-        setGallery(data);
-      } else {
-        setGallery([]);
-      }
-    } catch (error) {
-      console.error('Galeri yüklenirken hata:', error);
-      setGallery([]);
+      setAllGallery(Array.isArray(data) ? data : []);
+    } catch {
+      setAllGallery([]);
     } finally {
       setLoading(false);
     }
   };
 
-  const openLightbox = (image: string, title: string) => {
-    setLightbox({ isOpen: true, image, title });
+  // Kategorilere göre grupla
+  const categoryGroups: CategoryGroup[] = categories.map(cat => {
+    const imgs = allGallery
+      .filter(item => item.category === cat.value)
+      .sort((a, b) => a.order - b.order)
+      .map(item => item.image);
+    return { value: cat.value, label: cat.label, images: imgs, count: imgs.length };
+  }).filter(g => g.count > 0);
+
+  const openLightbox = (images: string[], index: number) => {
+    setLightbox({ isOpen: true, image: images[index], index, images });
   };
 
-  const closeLightbox = () => {
-    setLightbox(null);
+  const closeLightbox = () => setLightbox(null);
+
+  const goNext = () => {
+    if (!lightbox) return;
+    const next = (lightbox.index + 1) % lightbox.images.length;
+    setLightbox({ ...lightbox, image: lightbox.images[next], index: next });
   };
+
+  const goPrev = () => {
+    if (!lightbox) return;
+    const prev = (lightbox.index - 1 + lightbox.images.length) % lightbox.images.length;
+    setLightbox({ ...lightbox, image: lightbox.images[prev], index: prev });
+  };
+
+  // Seçili kategori görselleri
+  const selectedGroup = selectedCategory
+    ? categoryGroups.find(g => g.value === selectedCategory)
+    : null;
 
   return (
     <div className="min-h-screen bg-gray-50 pt-20 lg:pt-56">
@@ -87,87 +110,129 @@ export default function GaleriPage() {
         />
         <div className="relative z-20 container mx-auto px-6 text-center text-white">
           <h1 className="text-5xl font-bold mb-4">{t('galleryPage.title')}</h1>
-          <p className="text-xl text-gray-200">
-            {t('galleryPage.subtitle')}
-          </p>
+          <p className="text-xl text-gray-200">{t('galleryPage.subtitle')}</p>
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="bg-white shadow-md sticky top-20 z-40">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex flex-wrap gap-3 justify-center">
-            <button
-              onClick={() => setSelectedCategory('all')}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                selectedCategory === 'all'
-                  ? 'bg-gold text-white shadow-lg'
-                  : 'bg-gray-100 text-navy hover:bg-gray-200'
-              }`}
-            >
-              {t('galleryPage.allCategories')}
-            </button>
-            {categories.map((cat) => (
-              <button
-                key={cat.value}
-                onClick={() => setSelectedCategory(cat.value)}
-                className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                  selectedCategory === cat.value
-                    ? 'bg-gold text-white shadow-lg'
-                    : 'bg-gray-100 text-navy hover:bg-gray-200'
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Grid */}
-      <section className="py-20">
+      {/* Ana içerik */}
+      <section className="py-16">
         <div className="container mx-auto px-6">
           {loading ? (
-            <div className="text-center py-12">
-              <div className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-gold border-r-transparent"></div>
+            <div className="text-center py-20">
+              <div className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-gold border-r-transparent" />
               <p className="mt-4 text-gray-600">{t('galleryPage.loading')}</p>
             </div>
-          ) : gallery.length === 0 ? (
-            <div className="text-center py-12 text-gray-500">
-              {t('galleryPage.noImages')}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {gallery
-                .filter(item => selectedCategory === 'all' ? true : item.category === selectedCategory)
-                .map((item) => (
-                  <div
-                    key={item.id}
-                    onClick={() => openLightbox(item.image, item.title_tr)}
-                    className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300"
-                  >
-                    <Image
-                      src={item.image}
-                      alt={item.title_tr}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="text-white font-semibold text-lg">{item.title_tr}</h3>
-                        {item.description_tr && (
-                          <p className="text-gray-200 text-sm mt-1 line-clamp-2">{item.description_tr}</p>
+          ) : !selectedCategory ? (
+            // KATEGORİ KART GÖRÜNÜMÜ
+            <>
+              {categoryGroups.length === 0 ? (
+                <div className="text-center py-20 text-gray-500">{t('galleryPage.noImages')}</div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                  {categoryGroups.map((group) => (
+                    <button
+                      key={group.value}
+                      onClick={() => setSelectedCategory(group.value)}
+                      className="group flex flex-col items-center text-center focus:outline-none"
+                    >
+                      {/* Dağınık katmanlı fotoğraflar */}
+                      <div className="relative w-64 h-64 mb-5">
+                        {/* Arka katmanlar (max 3 arka fotoğraf) */}
+                        {group.images.slice(1, 4).reverse().map((img, i) => {
+                          const rot = SCATTER_ROTATIONS[(i + 1) % SCATTER_ROTATIONS.length];
+                          const off = SCATTER_OFFSETS[(i + 1) % SCATTER_OFFSETS.length];
+                          return (
+                            <div
+                              key={i}
+                              className="absolute inset-0 rounded-2xl overflow-hidden shadow-lg border-4 border-white"
+                              style={{
+                                transform: `rotate(${rot}deg) translate(${off.x}px, ${off.y}px)`,
+                                zIndex: i,
+                              }}
+                            >
+                              <Image
+                                src={img}
+                                alt=""
+                                fill
+                                className="object-cover"
+                              />
+                            </div>
+                          );
+                        })}
+                        {/* Ön (ana) fotoğraf */}
+                        {group.images[0] && (
+                          <div
+                            className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border-4 border-white group-hover:scale-105 transition-transform duration-300"
+                            style={{ zIndex: 10 }}
+                          >
+                            <Image
+                              src={group.images[0]}
+                              alt={group.label}
+                              fill
+                              className="object-cover"
+                            />
+                            {/* Hover overlay */}
+                            <div className="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                              <Images className="w-10 h-10 text-white drop-shadow" />
+                            </div>
+                          </div>
                         )}
                       </div>
+
+                      {/* Kategori adı ve sayısı */}
+                      <h2 className="text-xl font-bold text-navy group-hover:text-gold transition-colors duration-200">
+                        {group.label}
+                      </h2>
+                      <p className="text-sm text-gray-500 mt-1">{group.count} fotoğraf</p>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </>
+          ) : (
+            // SEÇİLİ KATEGORİ GÖRSEL GRID
+            <>
+              {/* Geri butonu */}
+              <button
+                onClick={() => setSelectedCategory(null)}
+                className="mb-8 flex items-center gap-2 text-navy hover:text-gold font-semibold transition-colors"
+              >
+                <span className="text-lg">←</span>
+                <span>Tüm Kategoriler</span>
+              </button>
+
+              <h2 className="text-3xl font-bold text-navy mb-8">
+                {selectedGroup?.label}
+                <span className="ml-3 text-lg font-normal text-gray-400">({selectedGroup?.count} fotoğraf)</span>
+              </h2>
+
+              {selectedGroup && selectedGroup.images.length > 0 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                  {selectedGroup.images.map((img, idx) => (
+                    <div
+                      key={idx}
+                      onClick={() => openLightbox(selectedGroup.images, idx)}
+                      className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300"
+                    >
+                      <Image
+                        src={img}
+                        alt={`${selectedGroup.label} ${idx + 1}`}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
-                  </div>
-                ))}
-            </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12 text-gray-500">Bu kategoride görsel yok</div>
+              )}
+            </>
           )}
         </div>
       </section>
 
-      {/* Lightbox Modal */}
+      {/* Lightbox */}
       {lightbox?.isOpen && (
         <div
           className="fixed inset-0 bg-black/95 z-[200] flex items-center justify-center p-4"
@@ -175,23 +240,50 @@ export default function GaleriPage() {
         >
           <button
             onClick={closeLightbox}
-            className="absolute top-6 right-6 text-white hover:text-gold transition-colors"
-            aria-label={t('galleryPage.closeButton')}
+            className="absolute top-6 right-6 text-white hover:text-gold transition-colors z-10"
           >
             <X className="w-10 h-10" />
           </button>
-          <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
+
+          {/* Prev */}
+          {lightbox.images.length > 1 && (
+            <button
+              onClick={(e) => { e.stopPropagation(); goPrev(); }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors text-4xl font-light z-10"
+            >
+              ‹
+            </button>
+          )}
+
+          <div
+            className="relative max-w-5xl max-h-[85vh] w-full h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
             <Image
               src={lightbox.image}
-              alt={lightbox.title}
+              alt="Galeri"
               fill
               className="object-contain"
-              onClick={(e) => e.stopPropagation()}
+              unoptimized
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-              <h2 className="text-white text-2xl font-bold text-center">{lightbox.title}</h2>
-            </div>
           </div>
+
+          {/* Next */}
+          {lightbox.images.length > 1 && (
+            <button
+              onClick={(e) => { e.stopPropagation(); goNext(); }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors text-4xl font-light z-10"
+            >
+              ›
+            </button>
+          )}
+
+          {/* Counter */}
+          {lightbox.images.length > 1 && (
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/60 text-sm">
+              {lightbox.index + 1} / {lightbox.images.length}
+            </div>
+          )}
         </div>
       )}
     </div>
